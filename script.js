@@ -71,7 +71,6 @@ window.onload = function() {
 
     const slideWidth = ownSlides[0].clientWidth;
     let percentOfSliding = (mainHere.clientWidth / 2); //нахождение центра экрана и умножение на -1 для движения влево
-    console.log(percentOfSliding)
 
     let slideNumberBlock = document.querySelector('.slideNumber'),
         allSlideCountBlock = document.querySelector('.allSlideCount');
@@ -155,7 +154,6 @@ window.onload = function() {
     
 //    open 1
     function openFirstPopUp() {
-        console.log('start')
         navButton[0].removeEventListener('click', openFirstPopUp);
         backPopup.removeEventListener('click', closeFirstPopUp);
         popup[0].removeEventListener('click', closeFirstPopUp);
@@ -164,8 +162,8 @@ window.onload = function() {
         backPopup.style.background = 'rgba(0, 0, 0, 0.7)';
         backPopup.style.display = 'block';
         backPopup.style.zIndex = 98;
+        window.scrollBy(0, -10000)
         setTimeout(function() {
-            console.log('end')
             backPopup.addEventListener('click', closeFirstPopUp);
             navButton[0].addEventListener('click', openFirstPopUp);
             popup[0].addEventListener('click', closeFirstPopUp);
@@ -199,6 +197,7 @@ window.onload = function() {
         backPopup.style.background = 'rgba(0, 0, 0, 0.7)';
         backPopup.style.display = 'block';
         backPopup.style.zIndex = 98;
+        window.scrollBy(0, 10000)
         setTimeout(function() {
             backPopup.addEventListener('click', closeSecondPopUp);
             navButton[1].addEventListener('click', openSecondPopUp);
