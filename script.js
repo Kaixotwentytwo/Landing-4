@@ -220,6 +220,7 @@ window.onload = function() {
             popup[1].style.left = '0';
             popup[1].style.width = '100vw';
         }
+        console.log('resizing')
     }
     
     resizingPopUp()
