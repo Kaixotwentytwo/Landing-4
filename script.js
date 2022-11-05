@@ -218,6 +218,8 @@ window.onload = function() {
         } if (document.querySelector('#footerContainer').clientWidth < 1200) {
             popup[1].style.left = 'calc(50% - 600px / 2)';
             popup[0].style.left = 'calc(50% - 600px / 2)';
+            popup[1].style.width = '600px';
+            popup[0].style.width = '600px';
         } if (document.querySelector('#footerContainer').clientWidth < 600) {
             popup[1].style.left = '0';
             popup[1].style.width = '100vw';
