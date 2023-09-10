@@ -47,7 +47,7 @@ window.onload = function() {
                            html.clientHeight, html.scrollHeight, html.offsetHeight );
 
         let YCoord = window.pageYOffset,
-            heightOfScreen = document.querySelectorAll('.main')[0].clientHeight;
+            heightOfScreen = document.querySelectorAll('.main')[0].clientHeight - 600;
 
         if (YCoord > heightOfScreen) {
            someImageBlock.style.setProperty('transform', 'translateX(0)');
